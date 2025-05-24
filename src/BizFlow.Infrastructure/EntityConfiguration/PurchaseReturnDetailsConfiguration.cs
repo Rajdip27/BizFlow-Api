@@ -10,6 +10,6 @@ public class PurchaseReturnDetailsConfiguration : IEntityTypeConfiguration<Purch
     {
         builder.ToTable(nameof(PurchaseDetails));
         builder.HasKey(x => x.Id);
-        builder.HasOne(x => x.PurchaseReturn).WithMany(x => x.PurchaseReturnDetails).HasForeignKey(x => x.PurchaseId);
+        builder.HasOne(x => x.PurchaseReturn).WithMany(x => x.PurchaseReturnDetails).HasForeignKey(x => x.PurchaseReturnId);
     }
 }

@@ -68,4 +68,5 @@ public class Purchase:AuditableEntity
     public string PaymentType { get; set; } // e.g., "Cash", "Card", "UPI"
 
     public ICollection<PurchaseDetails> PurchaseDetails { get; set; }=new List<PurchaseDetails>();
+    public ICollection<PurchaseTransaction> PurchaseTransaction { get; set; }=new List<PurchaseTransaction>();
 }
