@@ -1,7 +1,10 @@
-﻿using BizFlow.Application.Model.BaseEntities;
+﻿using AutoMapper;
+using BizFlow.Application.Model.BaseEntities;
+using BizFlow.Domain.Model;
 using System.ComponentModel.DataAnnotations;
 
 namespace BizFlow.Application.ViewModel;
+[AutoMap(typeof(PurchaseDetails), ReverseMap = true)]
 
 public class PurchaseDetailsVm:BaseEntity
 {
