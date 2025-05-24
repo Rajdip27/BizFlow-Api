@@ -62,4 +62,6 @@ public class PurchaseReturn:AuditableEntity
 
     [StringLength(100)]
     public string PurchaseTransaction { get; set; }
+
+    public ICollection<PurchaseReturnDetails> PurchaseReturnDetails { get; set; } = new List<PurchaseReturnDetails>();
 }
